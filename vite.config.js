@@ -50,5 +50,4 @@ export default defineConfig({
             },
         }),
     ],
-    base: "/visual-search/"
 });
