@@ -8,6 +8,7 @@ export default defineConfig({
         eslintPlugin(),
         checker({
             eslint: {
+                lintCommand: 'eslint .',
                 files: ['./'],
                 extensions: ['.js'],
             },
