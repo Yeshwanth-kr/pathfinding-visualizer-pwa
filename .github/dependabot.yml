@@ -4,9 +4,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly" # Weekly is better to avoid "Update Fatigue"
+      interval: "weekly"
     open-pull-requests-limit: 5
-    # This ensures Dependabot uses your .npmrc settings
     versioning-strategy: increase
 
   # 2. Track Docker base images (Node and Nginx)
