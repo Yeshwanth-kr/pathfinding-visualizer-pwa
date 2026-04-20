@@ -1,5 +1,5 @@
 # Stage 1: Build the React application
-FROM node:20.12.2-alpine3.19 AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 
 # Copy configuration files first to leverage Docker cache
