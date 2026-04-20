@@ -32,5 +32,5 @@ The engine provides a deep dive into several graph traversal strategies:
 3. `npm run dev`
 
 ---
-**Author**: Yeshwanth Krishna<br>
+**Author**: [Yeshwanth Krishna](http://yeshwanth.online)<br>
 **Focus**: Algorithms, Data Structures & Performance Optimization
