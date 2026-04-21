@@ -1,6 +1,7 @@
 {
-  "name": "visual-search",
+  "name": "pathfinding-visualizer-pwa",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

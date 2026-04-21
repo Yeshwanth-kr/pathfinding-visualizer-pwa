@@ -1,16 +1,12 @@
 import { defineConfig } from 'vite';
-import eslintPlugin from 'vite-plugin-eslint';
 import checker from 'vite-plugin-checker';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
     plugins: [
-        eslintPlugin(),
         checker({
             eslint: {
                 lintCommand: 'eslint .',
-                files: ['./'],
-                extensions: ['.js'],
             },
         }),
         VitePWA({
@@ -22,8 +18,8 @@ export default defineConfig({
                 'apple-touch-icon.png',
             ],
             manifest: {
-                name: 'Visual Search',
-                short_name: 'Visual Search',
+                name: 'Pathfinding Visualizer',
+                short_name: 'Visualizer',
                 "start_url": "/",
                 "scope": "/",
                 description:
