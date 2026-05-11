@@ -17,7 +17,8 @@
     "vite-plugin-pwa": "^1.2.0"
   },
   "dependencies": {
-    "@viselect/vanilla": "^3.9.0"
+    "@viselect/vanilla": "^3.9.0",
+    "picomatch": "^4.0.4"
   },
   "engines": {
     "node": ">=22.0.0"
