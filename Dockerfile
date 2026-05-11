@@ -1,5 +1,7 @@
 # Stage 1: Build the React application
 FROM node:25-alpine AS build
+RUN apk add --no-network --no-cache nghttp2-libs>=1.68.1
+
 WORKDIR /app
 
 # Copy configuration files first to leverage Docker cache
