@@ -24,3 +24,8 @@ COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
+
+FROM node:25-alpine
+RUN apk update && apk upgrade && apk add --no-cache "nghttp2-libs>=1.68.1"
+COPY --from=build /app/dist /usr/share/nginx/html
+...
