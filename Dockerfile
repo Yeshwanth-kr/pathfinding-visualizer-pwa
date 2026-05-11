@@ -1,5 +1,7 @@
 # Stage 1: Build the React application
 FROM node:25-alpine AS build
+RUN apk update && apk upgrade
+
 WORKDIR /app
 
 # Copy configuration files first to leverage Docker cache
@@ -22,3 +24,7 @@ COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
+
+FROM node:25-alpine
+RUN apk update && apk upgrade && apk add --no-cache "nghttp2-libs>=1.68.1"
+COPY --from=build /app/dist /usr/share/nginx/html
