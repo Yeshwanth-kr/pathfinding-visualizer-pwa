@@ -1,6 +1,6 @@
 # Stage 1: Build the React application
 FROM node:25-alpine AS build
-RUN apk add --no-cache nghttp2-libs>=1.68.1
+RUN apk update && apk upgrade
 
 WORKDIR /app
 
