@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@viselect/vanilla": "^3.9.0",
-    "picomatch": "^4.0.4"
+    "picomatch": "^3.0.2"
   },
   "engines": {
     "node": ">=22.0.0"
