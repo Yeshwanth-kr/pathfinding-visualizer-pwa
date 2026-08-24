@@ -1,6 +1,7 @@
 # Stage 1: Build the React application
 FROM node AS build
-RUN apt update && apt upgrade
+RUN apt update
+RUN apt upgrade
 
 WORKDIR /app
 
