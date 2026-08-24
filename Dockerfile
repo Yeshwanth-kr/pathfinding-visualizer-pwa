@@ -1,5 +1,5 @@
 # Stage 1: Build the React application
-FROM node:26-alpine AS build
+FROM node AS build
 RUN apk update && apk upgrade
 
 WORKDIR /app
