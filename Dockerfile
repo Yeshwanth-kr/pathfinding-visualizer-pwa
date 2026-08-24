@@ -1,7 +1,6 @@
 # Stage 1: Build the React application
-FROM node AS build
-RUN apt update
-#RUN apt upgrade
+FROM node:26.7.0-alpine AS build
+RUN apk update && apk upgrade
 
 WORKDIR /app
 
