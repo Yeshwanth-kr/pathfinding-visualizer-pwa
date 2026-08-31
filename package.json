@@ -19,7 +19,7 @@
   "dependencies": {
     "@viselect/vanilla": "^3.9.0",
     "glob": "^13.0.6",
-    "picomatch": "^4.0.5"
+    "picomatch": "^4.0.7"
   },
   "engines": {
     "node": ">=22.0.0"
